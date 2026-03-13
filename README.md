@@ -11,7 +11,7 @@
 
 A comprehensive mobile application that connects stranded motorists with nearby mechanics. Whether you're facing a breakdown in an unfamiliar area or need a quick repair, Orb ensures help is just a few taps away.
 
-[Download APK](https://expo.dev/accounts/bbq1536/projects/orb/builds/a90ec14d-9000-4daf-8853-d61b2b7f2bc6) • [Backend API](https://backend-three-sepia-16.vercel.app/)
+[Latest Release](https://github.com/greshakhambhaita/Orb/releases/tag/v1.0) • [Backend API](https://backend-three-sepia-16.vercel.app/)
 
 </div>
 
@@ -132,7 +132,7 @@ EMAIL_PASS=your_email_password
 
 ### Frontend Setup
 
-**APK Download**: [https://expo.dev/accounts/bbq1536/projects/orb/builds/a90ec14d-9000-4daf-8853-d61b2b7f2bc6](https://expo.dev/accounts/bbq1536/projects/orb/builds/a90ec14d-9000-4daf-8853-d61b2b7f2bc6)
+**Latest Release**: [https://github.com/greshakhambhaita/Orb/releases/tag/v1.0](https://github.com/greshakhambhaita/Orb/releases/tag/v1.0)
 
 To run locally:
 
@@ -187,6 +187,6 @@ Please make sure to update tests as appropriate and adhere to the existing codin
 
 **Built with ❤️ for stranded motorists everywhere**
 
-[Report Bug](https://github.com/yourusername/orb/issues) • [Request Feature](https://github.com/yourusername/orb/issues)
+[Report Bug](https://github.com/greshakhambhaita/Orb/issues) • [Request Feature](https://github.com/greshakhambhaita/Orb/issues)
 
 </div>
