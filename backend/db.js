@@ -78,6 +78,11 @@ const userSchema = new mongoose.Schema({
     enum: ['user', 'mechanic'],
     default: 'user'
   },
+  phone: {
+    type: String,
+    trim: true,
+    default: null
+  },
   avatar: {
     type: String,
     default: null

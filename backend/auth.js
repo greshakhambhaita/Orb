@@ -197,6 +197,7 @@ export const login = async (req, res) => {
         email: user.email,
         username: user.username,
         role: user.role,
+        phone: user.phone,
         avatar: user.avatar,
         createdAt: user.createdAt
       },
@@ -241,6 +242,7 @@ export const getCurrentUser = async (req, res) => {
         email: user.email,
         username: user.username,
         role: user.role,
+        phone: user.phone,
         avatar: user.avatar,
         createdAt: user.createdAt
       },
@@ -267,9 +269,9 @@ export const getCurrentUser = async (req, res) => {
 
 export const updateProfile = async (req, res) => {
   try {
-    const { username, email, avatar, role, mechanicData } = req.body;
+    const { username, email, phone, avatar, role, mechanicData } = req.body;
 
-    if (!username && !email && !avatar && !role) {
+    if (!username && !email && !phone && !avatar && !role) {
       return res.status(400).json({
         error: 'At least one field is required'
       });
@@ -315,6 +317,11 @@ export const updateProfile = async (req, res) => {
     // Update role if provided
     if (role && ['user', 'mechanic'].includes(role)) {
       updates.role = role;
+    }
+
+    // Update phone if provided
+    if (phone !== undefined) {
+      updates.phone = phone;
     }
 
     // Update the user
@@ -421,6 +428,7 @@ export const updateProfile = async (req, res) => {
         email: user.email,
         username: user.username,
         role: user.role,
+        phone: user.phone,
         avatar: user.avatar,
         createdAt: user.createdAt
       },
@@ -479,6 +487,7 @@ export const uploadAvatar = async (req, res) => {
         email: user.email,
         username: user.username,
         role: user.role,
+        phone: user.phone,
         avatar: user.avatar,
         createdAt: user.createdAt
       }
@@ -648,6 +657,7 @@ export const verifyOTP = async (req, res) => {
         email: user.email,
         username: user.username,
         role: user.role,
+        phone: user.phone,
         avatar: user.avatar,
         createdAt: user.createdAt
       },
